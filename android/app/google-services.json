@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295635931500",
+    "project_id": "eyyubiyepersonel",
+    "storage_bucket": "eyyubiyepersonel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295635931500:android:aecdef6cd4d9fe4bfb6349",
+        "android_client_info": {
+          "package_name": "com.example.eyyubiye_personel_takip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRYzhy5J3R6_gtnumESYb39645ekWmcaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

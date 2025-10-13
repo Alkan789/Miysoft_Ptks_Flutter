@@ -1,0 +1,49 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services' // Firebase için
+    id "org.jetbrains.kotlin.android" version "1.8.22"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.example.eyyubiye_personel_takip"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.eyyubiye_personel_takip"
+        minSdk 26 // WorkManager için en az 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+// WorkManager ve diğer bağımlılıklar
+dependencies {
+    implementation "androidx.work:work-runtime:2.8.1" // WorkManager
+    implementation "androidx.multidex:multidex:2.0.1" // Multidex desteği
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22" // Kotlin
+    implementation "androidx.work:work-runtime-ktx:2.8.1" // Bu satırı ekleyin
+}
+
+flutter {
+    source = "../.."
+}
